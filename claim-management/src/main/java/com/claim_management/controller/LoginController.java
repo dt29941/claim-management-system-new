@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import com.claim_management.service.LoginService;
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/login-api")
 public class LoginController{
     @Autowired
     LoginRepository loginRepository;
