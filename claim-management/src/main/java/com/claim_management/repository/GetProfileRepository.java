@@ -14,7 +14,7 @@ import java.util.Optional;
 public interface GetProfileRepository extends JpaRepository<Profile, Long> {
 
     @Query(value = """
-            SELECT id, name, email, phoneNumber, hireDate, role, departmentId
+            SELECT id, name, email, phone_number As phoneNumber , hire_date AS hireDate, role, department_id AS departmentId
             FROM employee WHERE name = :username
         """, nativeQuery = true)
     Optional<GetProfileDTO> getProfileByUser(@Param("username") String username);

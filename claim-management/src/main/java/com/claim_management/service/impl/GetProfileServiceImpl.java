@@ -17,6 +17,7 @@ public class GetProfileServiceImpl implements GetProfileService {
 
     @Override
     public GetProfileDTO getProfileData(String username){
+        System.out.println("getprofileDATA");
         return getProfileRepository.getProfileByUser(username).orElse(null);
     }
 

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class GetProfileDTO implements Serializable {
-    private Long id;
+    private int id;
     private String name;
     private String email;
     private String phoneNumber;
@@ -16,7 +16,7 @@ public class GetProfileDTO implements Serializable {
     public GetProfileDTO() {}
 
     // Parameterized constructor
-    public GetProfileDTO(Long id, String name, String email, String phoneNumber, Date hireDate, String role, Integer departmentId) {
+    public GetProfileDTO(int id, String name, String email, String phoneNumber, Date hireDate, String role, Integer departmentId) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -28,11 +28,11 @@ public class GetProfileDTO implements Serializable {
     }
 
     // Getters and Setters
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -25,7 +25,7 @@ public class Profile{
     private String email;
 
 
-    @Column(name="phone_number",nullable = false)
+    @Column(name="phoneNumber",nullable = false)
     private String phoneNumber;
 
     public int getId() {

@@ -27,7 +27,7 @@ public class Employee{
     @Column(name="password",nullable = false)
     private String password;
 
-    @Column(name="phone_number",nullable = false)
+    @Column(name="phoneNumber",nullable = false)
     private String phoneNumber;
 
     public int getId() {
