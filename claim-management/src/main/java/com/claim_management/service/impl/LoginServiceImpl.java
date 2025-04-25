@@ -17,7 +17,7 @@ public class LoginServiceImpl implements LoginService {
 
     @Override
     public boolean authenticate(String username, String password) {
-        Optional<Employee> employeeOpt = loginRepository.findByUsername(username); // Use the instance method
+        Optional<Employee> employeeOpt = loginRepository.findByName(username); // Use the instance method
         return employeeOpt.map(employee -> employee.getPassword().equals(password)).orElse(false);
     }
 }

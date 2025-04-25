@@ -1,6 +1,7 @@
 package com.claim_management.controller;
 
-import com.claim_management.model.LoginRequest;
+import com.claim_management.dto.LoginReqDTO;
+
 import com.claim_management.repository.LoginRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -17,10 +18,10 @@ public class LoginController{
     private LoginService loginService;
 
     @RequestMapping(value="/login", method = RequestMethod.POST)
-    public String login(@RequestBody LoginRequest loginRequest){
-        String username = loginRequest.getUsername();
-        String email = loginRequest.getEmail();
-        String password = loginRequest.getPassword();
+    public String login(@RequestBody LoginReqDTO loginReqDTO){
+        String username = loginReqDTO.getUsername();
+        String email = loginReqDTO.getEmail();
+        String password = loginReqDTO.getPassword();
         System.out.println(username);
 
         boolean isAuthenticated = loginService.authenticate(username, password);

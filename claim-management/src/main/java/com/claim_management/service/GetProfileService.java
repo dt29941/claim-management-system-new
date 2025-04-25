@@ -1,10 +1,10 @@
 package com.claim_management.service;
 
-import com.claim_management.dto.GetProfileDTO;
+import com.claim_management.dto.GetProfileResDTO;
 
 public interface GetProfileService {
 
-    GetProfileDTO getProfileData(String username);
+    GetProfileResDTO getProfileData(String username);
 
 
 }

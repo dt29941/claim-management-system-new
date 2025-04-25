@@ -3,7 +3,7 @@ package com.claim_management.dto;
 import java.io.Serializable;
 import java.util.Date;
 
-public class GetProfileDTO implements Serializable {
+public class GetProfileResDTO implements Serializable {
     private int id;
     private String name;
     private String email;
@@ -12,11 +12,10 @@ public class GetProfileDTO implements Serializable {
     private String role;
     private Integer departmentId;
 
-    // Default constructor
-    public GetProfileDTO() {}
+
 
     // Parameterized constructor
-    public GetProfileDTO(int id, String name, String email, String phoneNumber, Date hireDate, String role, Integer departmentId) {
+    public GetProfileResDTO(int id, String name, String email, String phoneNumber, Date hireDate, String role, Integer departmentId) {
         this.id = id;
         this.name = name;
         this.email = email;

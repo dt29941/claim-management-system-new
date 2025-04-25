@@ -1,6 +1,6 @@
-package com.claim_management.model;
+package com.claim_management.dto;
 
-public class LoginRequest {
+public class LoginReqDTO{
     private String username;
     private String email;
     private String password;
